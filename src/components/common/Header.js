@@ -34,4 +34,4 @@ const styles = {
   }
 };
 // Render it to a device.
-export default Header;
+export { Header };

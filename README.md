@@ -25,4 +25,17 @@ Source from Udemy course Complete React Native
 ### 9.56 Copying Reusable Components
 
 * Copy components from albums: Card, CardSection, Button, Header
-* 
+* We're going to use a Trick to get less impot statements in each file
+* In /common/ create index.js and import several Components an export
+* By default index.js will be picked up by import directory
+
+```javascript
+export * from './Header';
+export * from './Button';
+export * from './Card';
+export * from './CardSection';
+```
+
+* Main downside to this approach is you cannot use the export "default" keyword in the other Components.
+* Instead you do something like this key:value `export { Button: Button };`
+* or to condense for ES6: `export { Button };`
