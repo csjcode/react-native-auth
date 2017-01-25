@@ -23,3 +23,6 @@ Source from Udemy course Complete React Native
 ---------------------------------
 
 ### 9.56 Copying Reusable Components
+
+* Copy components from albums: Card, CardSection, Button, Header
+* 
