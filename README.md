@@ -75,3 +75,10 @@ componentWillMount (){
 ---------------------------------
 
 ### 9.59 Login Form Scaffolding
+
+* Signup form should be a component outside the app because soemtimes, such as after signin, it won't be needed.
+* Create new component LoginForm in /component/
+* Add login form boilerplate for class-based component
+* Add in: `import { Button, Card, CardSection } from './common';`
+* Remove View wth Card
+* Add Button
