@@ -82,3 +82,15 @@ componentWillMount (){
 * Add in: `import { Button, Card, CardSection } from './common';`
 * Remove View wth Card
 * Add Button
+
+---------------------------------
+
+### 9.60 Handling User Inputs
+
+* Text inputs in card sections
+* Handling text inputs is kind of a pain with React Native
+* First make the text form.
+* refactor to reusable Input component
+* import in TextInput
+* TextInput primitive does not have height or width, render of height/width = 0
+* Add style prop to
