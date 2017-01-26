@@ -3,7 +3,7 @@ Source from Udemy course Complete React Native
 
 * Start Android Studi
 * `cd C:\Users\CS\Documents\Web Development\react-native\react-native-auth`
-* `> C:\Users\CS\AppData\Local\Android\sdk\"AVD Manager.exe"`
+* `> C:\Users\CS\AppData\Local\Android\sdk\'AVD Manager.exe'`
 * `> react-native run-android`
 * `> packager.sh`
 
@@ -36,7 +36,7 @@ export * from './Card';
 export * from './CardSection';
 ```
 
-* Main downside to this approach is you cannot use the export "default" keyword in the other Components.
+* Main downside to this approach is you cannot use the export 'default' keyword in the other Components.
 * Instead you do something like this key:value `export { Button: Button };`
 * or to condense for ES6: `export { Button };`
 
@@ -51,3 +51,27 @@ export * from './CardSection';
 ---------------------------------
 
 ### 9.58 Firebase Client Setup
+
+* `npm install --save firebase`
+* When we created react-native-auth this created a bucket on the firebase server
+* Now we have to setup locally
+* `import firebase from 'firebase';`
+* Back to firebase.com - get the copy-paste code from Web Setup
+* copy just the object inside `firebase.initializeApp({`
+```javascript
+componentWillMount (){
+  firebase.initializeApp({
+      apiKey: 'AIzaSyCnz8V-MuEiOWcs3oyBBxyO6BCjpAGJm7o',
+      authDomain: 'react-native-auth-284c7.firebaseapp.com',
+      databaseURL: 'https://react-native-auth-284c7.firebaseio.com',
+      storageBucket: 'react-native-auth-284c7.appspot.com',
+      messagingSenderId: '1049444233116'
+  });
+}
+```
+
+* make sure firebase import is above Header
+
+---------------------------------
+
+### 9.59 Login Form Scaffolding
