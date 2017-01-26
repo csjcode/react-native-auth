@@ -39,3 +39,15 @@ export * from './CardSection';
 * Main downside to this approach is you cannot use the export "default" keyword in the other Components.
 * Instead you do something like this key:value `export { Button: Button };`
 * or to condense for ES6: `export { Button };`
+
+---------------------------------
+
+### 9.57 What is Firebase?
+
+* Create new project in Firebase
+* Create new app with Web (Javascript, not Android or iOS
+* Set up authentication with email
+
+---------------------------------
+
+### 9.58 Firebase Client Setup
