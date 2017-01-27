@@ -3,7 +3,7 @@ Source from Udemy course Complete React Native
 
 * Start Android Studi
 * `cd C:\Users\CS\Documents\Web Development\react-native\react-native-auth`
-* `> C:\Users\CS\AppData\Local\Android\sdk\'AVD Manager.exe'`
+* `> C:\Users\CS\AppData\Local\Android\sdk\"AVD Manager.exe"`
 * `> react-native run-android`
 * `> packager.sh`
 
@@ -119,4 +119,18 @@ style={{ height: 20, width: 100 }} />
 
 ### 9.63 Making Text Inputs From Scratch
 
-* 
+* We're going to make a reusable component for the text input.
+* Create a new compnent in common Input.js - add to the export index.js also
+* Scaffold out a simple component with a prop {label}
+
+```javascript
+const Input = ({ label }) => {
+  return (
+    <View>
+      <Text>{label}</Text>
+    </View>
+  );
+};
+```
+
+### 9.64 Making Text Inputs From Scratch
