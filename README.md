@@ -179,3 +179,23 @@ class LoginForm extends Component {
   }
 }
 ```
+----------------------------------------------------
+
+### 9.65 Making the Input Pretty
+
+* Input.js add styles
+* Destrucure style tags  
+* `const { inputStyle, labelStyle, containerStyle } = styles;`
+* Put corresponding styles in each Component tag
+* Also make sure to pass the lable prop from LoginForm
+
+----------------------------------------------------
+
+### 9.66 Making the Input Pretty
+
+
+
+
+
+
+.
