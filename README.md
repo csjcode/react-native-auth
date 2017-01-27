@@ -80,7 +80,7 @@ componentWillMount (){
 * Create new component LoginForm in /component/
 * Add login form boilerplate for class-based component
 * Add in: `import { Button, Card, CardSection } from './common';`
-* Remove View wth Card
+* Remove View with Card
 * Add Button
 
 ---------------------------------
@@ -94,3 +94,29 @@ componentWillMount (){
 * import in TextInput
 * TextInput primitive does not have height or width, render of height/width = 0
 * Add style prop to
+
+---------------------------------
+
+### 9.61 More on Handling User Inputs
+
+* How do we get access to the text?
+* To hold text in the TextInput we''re going to add state = { text:'' }
+* `state = { text:'' }`
+```javascript
+<TextInput
+value={this.state.text}
+onChangeText={text => this.setState({ text })}
+style={{ height: 20, width: 100 }} />
+```
+* `onChangeText={text => this.setState({ text })}` (this is destructured from text:text)
+
+---------------------------------
+
+### 9.62 How to Create Controlled Components
+
+* When the onChange value changes, setState changes and the component re-renders
+* The typed value is saved in state.
+
+### 9.63 Making Text Inputs From Scratch
+
+* 
