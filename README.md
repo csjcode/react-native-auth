@@ -133,4 +133,49 @@ const Input = ({ label }) => {
 };
 ```
 
-### 9.64 Making Text Inputs From Scratch
+### 9.64 A Focus on Passing Props
+
+* In the new Input component we need to handle the state change. So we'll be adding props to Input.js
+
+```javascript
+const Input = ({ label, value, onChangeText }) => {
+  return (
+    <View>
+      <Text>{label}</Text>
+      <TextInput
+        value={value}
+        onChangeText={onChangeText}
+        style={{ height: 40, width: 100 }}
+      />
+    </View>
+  );
+```
+
+In Loginform:
+
+```javascript
+class LoginForm extends Component {
+  state = { text: '' };
+
+  render() {
+    return (
+      <Card>
+        <CardSection>
+          <Input
+            value={this.state.text}
+            onChangeText={text => this.setState({ text })}
+          />
+        </CardSection>
+
+        <CardSection />
+
+        <CardSection>
+          <Button>
+            Log in
+          </Button>
+        </CardSection>
+      </Card>
+    );
+  }
+}
+```
