@@ -217,7 +217,21 @@ class LoginForm extends Component {
 
 ### 9.68 Logging a User In
 
+* Taps on button - add a function with callback
+* Add callback to BUtton tag
+* onPress prop
+* `<Button onPress={this.onButtonPress.bind(this)}>`
+* Define onPress - add helper method at top
+* Import firebase and add method for signin
 
+```javascript
+
+  onButtonPress(){
+    const { email, password } = this.state;
+    firebase.auth().signInWithEmailAndPassword();
+  }
+
+```
 
 
 
