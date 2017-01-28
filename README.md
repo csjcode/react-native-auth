@@ -184,14 +184,27 @@ class LoginForm extends Component {
 ### 9.65 Making the Input Pretty
 
 * Input.js add styles
-* Destrucure style tags  
+* Destrucure style tags
 * `const { inputStyle, labelStyle, containerStyle } = styles;`
 * Put corresponding styles in each Component tag
 * Also make sure to pass the lable prop from LoginForm
+* Make sure not to use both style props - earlier prop is overwritten by the later one
 
 ----------------------------------------------------
 
-### 9.66 Making the Input Pretty
+### 9.66 Inputs
+
+* No default autocorrect - add a prop `autoCorrect={false}`
+* `const Input = ({ label, value, onChangeText, placeholder }) => {`
+* Add placeholder to Input.js
+* Add placeholder to TextInput
+* Change text prop to "email"
+
+----------------------------------------------------
+
+### 9.67 Password Inputs
+
+
 
 
 
