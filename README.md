@@ -206,7 +206,18 @@ class LoginForm extends Component {
 
 * Initialize password state
 * Create a new input tag in the card section
-* 
+* Make the password not available in plain text
+* If a prop is just true, it can be listed without the boolean
+* In input.js in TextInput `secureTextEntry`
+* We don;t always want Secure though. So we we add another prop to Input
+* Now we need to go back an assign to a prop:   `secureTextEntry={secureTextEntry}`
+* In the 2 CardSections - first plaintext, we can just leave it out, this is the same as false. Other one add.
+
+----------------------------------------------------
+
+### 9.68 Logging a User In
+
+
 
 
 
