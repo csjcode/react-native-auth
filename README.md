@@ -237,9 +237,15 @@ class LoginForm extends Component {
 
 ### 9.69 Error Handling
 
+* The firebase code returns a promise
+* Add .catch case to catch an error - setSatte to error if catch switch cannot signin or create account.
+* After error state is set, we need to show that in the render of the component f it's set
+* Add new text tag outside last CardSection
+* Import Text tag, also add some styling to the text tag
 
+----------------------------------------------------
 
-
+### 9.70 More on Authentication Flow
 
 
 
