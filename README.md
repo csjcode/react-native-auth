@@ -204,6 +204,9 @@ class LoginForm extends Component {
 
 ### 9.67 Password Inputs
 
+* Initialize password state
+* Create a new input tag in the card section
+* 
 
 
 
