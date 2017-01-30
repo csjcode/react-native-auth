@@ -277,9 +277,49 @@ class LoginForm extends Component {
 
 ----------------------------------------------------
 
-### 10.74 Clearing the Form Spinner
+### 10.73 Clearing the Form Spinner
 
+* Add onLoginSuccess helper function
+* Add this.onLoginSuccess.bind(this) - we bind because we don't know if the function will be used in a different context
+* In firebase promise - onLoginSuccess
+* In firebase promise - onLoginSuccess
 
+----------------------------------------------------
+
+### 10.74 Handling Authentication Events
+
+* In App we'll use the firebase.auth().onAuthStateChanged
+* firebase.auth().onAuthStateChanged((user) => {
+
+----------------------------------------------------
+
+### 10.75 More on Conditional Rendering
+
+* Login is either true or false.
+* We need A 3RD STATE - (1) You are not logged in, (2) You are logged in, (3) We don;t know if you are logged in.
+* Flip inital value of login as NULL.
+```javascript
+class App extends Component {
+  state = { loggedIn: null };
+```
+* Now we can do some switches for renderedContent
+
+```
+renderContent() {
+  switch (this.state.loggedIn) {
+    case true:
+      return <View style={styles.buttonContainerStyle}><Button>Log Out</Button></View>;
+    case false:
+      return <LoginForm />;
+    default:
+      return <Spinner size="large" />;
+  }
+}
+```
+
+----------------------------------------------------
+
+### 10.76 Logging a User Out and Wrapup
 
 
 
