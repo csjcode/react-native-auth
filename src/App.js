@@ -29,7 +29,11 @@ class App extends Component {
   renderContent() {
     switch (this.state.loggedIn) {
       case true:
-        return <View style={styles.buttonContainerStyle}><Button>Log Out</Button></View>;
+        return <View style={styles.buttonContainerStyle}>
+          <Button onPress={() => firebase.auth().signOut()}>
+            Log Out
+          </Button>
+        </View>;
       case false:
         return <LoginForm />;
       default:
@@ -49,7 +53,8 @@ class App extends Component {
 
 const styles = {
   buttonContainerStyle: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    height: 40
   }
 };
 

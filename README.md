@@ -321,7 +321,7 @@ renderContent() {
 
 ### 10.76 Logging a User Out and Wrapup
 
-
+* Add auth signout on signout button
 
 
 
