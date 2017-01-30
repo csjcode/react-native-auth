@@ -258,6 +258,13 @@ class LoginForm extends Component {
 
 ### 10.71 Creating an Activity Spinner
 
+* Import ActivityIndicator primitve compnent
+* Add style
+* Add size prop
+
+----------------------------------------------------
+
+### 10.72 Conditional Rendering of JSX
 
 
 
