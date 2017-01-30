@@ -266,7 +266,18 @@ class LoginForm extends Component {
 
 ### 10.72 Conditional Rendering of JSX
 
+* Add new loading boolean to state
+* onButtonPress add loading:true to state - any button press
+* Create new render method caled renderButton
+* Cut/paste Button into new renderButton method
+* call renderButton from inside the render()
+* `{this.renderButton()}`
+* import Spinner
+* Check - working but spinner does not go away
 
+----------------------------------------------------
+
+### 10.74 Clearing the Form Spinner
 
 
 
