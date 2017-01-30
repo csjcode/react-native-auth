@@ -245,7 +245,7 @@ class LoginForm extends Component {
 
 ----------------------------------------------------
 
-### 9.70 More on Authentication Flow
+### 10.70 More on Authentication Flow
 
 
 
