@@ -247,6 +247,20 @@ class LoginForm extends Component {
 
 ### 10.70 More on Authentication Flow
 
+* Attempt to signup
+* Authentication Failed works
+* We need to clear out email/password if incorrect
+* Inside ButtonPress, reset setState to empty object
+* Create new Spinner Component
+* Add to index.js `export * from './Spinner';`
+
+----------------------------------------------------
+
+### 10.71 Creating an Activity Spinner
+
+
+
+
 
 
 
